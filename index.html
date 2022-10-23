@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<title>Happy Birthday Shibam</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<body>
+<div class="popup">
+    
+    <h2>Hey !! </h2>
+    <p>
+        This Website is best optimized for Desktop Browsers <span class="material-symbols-outlined">
+            desktop_windows
+            </span>...<p>Kindly view in Desktop mode or in Desktop Chrome to get the best experience !</p>
+        </p>
+    <a href="#" onclick="location.href='sorry.html'">Okay Cool &#128526</a>
+    <a id= "second" href="#" onclick="location.href='card.html'">I'm in Desktop right now !</a>
+</div>
+
+<style>
+*,
+*:before,
+*:after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.popup{
+background-color: #e3f7fd;
+width: 420px;
+padding: 30px 40px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+border-radius: 8px;
+font-family: "Poppins",sans-serif;
+display: none; 
+text-align: center;
+}
+
+.popup h2{
+margin-top: -20px;
+}
+.popup p{
+font-size: 14px;
+text-align: justify;
+margin: 20px 0;
+line-height: 25px;
+}
+a{
+display: block;
+width: 150px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+background-color: #0f72e5;
+border-radius: 20px;
+color: #ffffff;
+text-decoration: none;
+padding: 8px 0;
+}
+#second{
+display: block;
+width: 210px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+background-color: #0f72e5;
+border-radius: 20px;
+color: #ffffff;
+text-decoration: none;
+padding: 10px 5px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height:40px;
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   text-align: left;
+   font-size: large;
+   font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
+<script type="text/javascript">
+  window.addEventListener("load", function(){
+  setTimeout(
+      function open(event){
+          document.querySelector(".popup").style.display = "block";
+      },
+      0
+  )
+  });
+  
+  
+  document.querySelector("#close").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none" });
+  </script>
+
+<div class="footer">
+    <marquee behavior="scroll" direction="right">Created by A Manna  </marquee>
+  </div>
+
+
+  </body>
+  </html>
